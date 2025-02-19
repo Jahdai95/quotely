@@ -33,6 +33,11 @@ function AddQuote(props: IDialogProps): React.JSX.Element {
       onSave={onSave}
     >
       <TextField
+        slotProps={{
+          htmlInput: {
+            "data-testid": "input-add-quote",
+          },
+        }}
         placeholder="Escribe tu cita aquí"
         variant="outlined"
         fullWidth

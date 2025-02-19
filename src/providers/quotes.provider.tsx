@@ -7,7 +7,7 @@ import {
 } from "react";
 import { getAllStorage } from "../utils/storage";
 
-interface IQuote {
+export interface IQuote {
   key: string;
   value: string;
 }
@@ -15,7 +15,9 @@ interface IQuotesProvider {
   quotesData: IQuote[];
   updateStorageData: () => void;
 }
-const QuotesContext = createContext<IQuotesProvider | undefined>(undefined);
+export const QuotesContext = createContext<IQuotesProvider | undefined>(
+  undefined
+);
 
 export const QuotesProvider = ({ children }: { children: ReactNode }) => {
   const [quotesData, setStorageData] = useState<IQuote[]>([]);

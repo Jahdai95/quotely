@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Should render Widget component > Should macth snapshot 1`] = `
+<div>
+  <div
+    class="background"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="main"
+      >
+        <h1>
+          No dejes para mañana lo que puedes hacer hoy
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;

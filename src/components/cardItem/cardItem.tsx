@@ -21,7 +21,12 @@ function CardItem(props: ICardItemProps): React.JSX.Element {
         }}
       >
         <p className="quicksand-200">{quote}</p>
-        <IconButton aria-label="delete" color="primary" onClick={handleDelete}>
+        <IconButton
+          data-testid="button-delete-quote"
+          aria-label="delete"
+          color="primary"
+          onClick={handleDelete}
+        >
           <ClearIcon />
         </IconButton>
       </CardContent>

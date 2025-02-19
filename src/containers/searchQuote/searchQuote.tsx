@@ -14,6 +14,11 @@ function SearchQuote(): React.JSX.Element {
     <>
       <Box display={"flex"}>
         <TextField
+          slotProps={{
+            htmlInput: {
+              "data-testid": "input-search-quote",
+            },
+          }}
           sx={{ margin: "4px" }}
           placeholder="Escribe para buscar una cita"
           variant="outlined"
@@ -22,7 +27,11 @@ function SearchQuote(): React.JSX.Element {
           onChange={(event) => onChange(event.target.value)}
         />
         <Tooltip title="Limpiar" placement="bottom">
-          <IconButton color="primary" onClick={() => setQuoteToFind("")}>
+          <IconButton
+            data-testid="button-clear-input"
+            color="primary"
+            onClick={() => setQuoteToFind("")}
+          >
             <NotInterestedIcon />
           </IconButton>
         </Tooltip>

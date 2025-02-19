@@ -15,7 +15,12 @@ function Title(): React.JSX.Element {
     >
       <h1 className="fontSize-lg quicksand-200">Citando citas</h1>
       <Tooltip title="Agregar cita" placement="left">
-        <IconButton color="primary" size="large" onClick={() => setOpen(true)}>
+        <IconButton
+          data-testid="button-add-quote"
+          color="primary"
+          size="large"
+          onClick={() => setOpen(true)}
+        >
           <AddIcon />
         </IconButton>
       </Tooltip>

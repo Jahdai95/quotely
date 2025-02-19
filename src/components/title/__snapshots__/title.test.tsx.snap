@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Should render Title component > Should macth snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1kw3y0a"
+  >
+    <h1
+      class="fontSize-lg quicksand-200"
+    >
+      Citando citas
+    </h1>
+    <button
+      aria-label="Agregar cita"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-14y7ap6-MuiButtonBase-root-MuiIconButton-root"
+      data-mui-internal-clone-element="true"
+      data-testid="button-add-quote"
+      id=":r7:"
+      tabindex="0"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="AddIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
